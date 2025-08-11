@@ -1,75 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Business Landing Page</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BELL OILS &PERFUMES</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff8f0;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background-color: #d4a373;
+            color: white;
+            padding: 20px;
+        }
+        h1 {
+            margin: 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+        }
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .product {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 250px;
+        }
+        footer {
+            background-color: #d4a373;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
-<body><script>
-  const backToTop = document.getElementById('backToTop');
+<body>
 
-  window.onscroll = function() {
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-      backToTop.style.display = "block";
-    } else {
-      backToTop.style.display = "none";
-    }
-  };
-
-  backToTop.onclick = function() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-</script>
-
-
-  <!-- Header -->
-  <header>
-    <div class="logo">BizBrand</div>
+<header>
+    <h1>BELL OILS &PERFUMES</h1>
+    <p>Premium Oils & Exquisite Perfumes</p>
     <nav>
-      <ul>
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
     </nav>
-  </header>
+</header>
 
-  <!-- Hero Section -->
-  <section id="hero">
-    <h1>Welcome to BizBrand</h1>
-    <p>Your one-stop solution for digital success.</p>
-    <a href="#contact" class="btn">Get Started</a>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services">
-    <h2>Our Services</h2>
-    <div class="service-box">
-      <div class="service">Web Design</div>
-      <div class="service">Marketing</div>
-      <div class="service">Branding</div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about">
+<section id="about">
     <h2>About Us</h2>
-    <p>We are a creative agency helping brands grow with beautiful digital solutions.</p>
-  </section>
+    <p>We provide high-quality essential oils and luxury perfumes. Our scents are crafted with care, offering you elegance in every drop.</p>
+</section>
 
-  <!-- Contact Section -->
-  <section id="contact">
+<section id="products">
+    <h2>Our Products</h2>
+    <div class="products">
+        <div class="product">
+            <h3>Lavender Oil</h3>
+            <p>Pure and calming, perfect for relaxation.</p>
+        </div>
+        <div class="product">
+            <h3>Rose Perfume</h3>
+            <p>Elegant floral fragrance for every occasion.</p>
+        </div>
+        <div class="product">
+            <h3>Custom Blend</h3>
+            <p>Your signature scent, made just for you.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
     <h2>Contact Us</h2>
-    <p>Email: hello@biZbrand.com</p>
-    <p>Phone: +256756140196</p>
-  </section>
+    <p>📞 +256 123 456 789</p>
+    <p>📧 info@yourbusiness.com</p>
+</section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 BizBrand. All rights reserved.</p>
-  </footer>
+<footer>
+    <p>&copy; 2025 Your Business Name. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
