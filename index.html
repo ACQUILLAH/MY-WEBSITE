@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BELL OILS &PERFUMES</title>
-    <link rel="stylesheet" href="style.css">
+    <title>BELL Oils & Perfumes</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,29 +11,31 @@
             padding: 0;
             background-color: #fff8f0;
             color: #333;
-            text-align: center;
         }
         header {
             background-color: #d4a373;
             color: white;
             padding: 20px;
-        }
-        h1 {
-            margin: 0;
+            text-align: center;
         }
         nav a {
             color: white;
             margin: 0 15px;
             text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
         }
         section {
             padding: 20px;
+            text-align: center;
         }
         .products {
             display: flex;
             justify-content: center;
-            gap: 20px;
             flex-wrap: wrap;
+            gap: 20px;
         }
         .product {
             background: white;
@@ -46,16 +47,23 @@
         footer {
             background-color: #d4a373;
             color: white;
+            text-align: center;
             padding: 15px;
             margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .products {
+                flex-direction: column;
+                align-items: center;
+            }
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>BELL OILS &PERFUMES</h1>
-    <p>Premium Oils & Exquisite Perfumes</p>
+    <h1>🌸 BELL Oils & Perfumes</h1>
+    <p>Your trusted source for premium oils and exquisite perfumes</p>
     <nav>
         <a href="#about">About</a>
         <a href="#products">Products</a>
@@ -64,36 +72,48 @@
 </header>
 
 <section id="about">
-    <h2>About Us</h2>
-    <p>We provide high-quality essential oils and luxury perfumes. Our scents are crafted with care, offering you elegance in every drop.</p>
+    <h2>✨ About Us</h2>
+    <p>At <strong>BELL Oils & Perfumes</strong>, we specialize in:</p>
+    <ul style="list-style:none; padding:0;">
+        <li>💎 Luxury Perfumes – Long-lasting scents for every occasion.</li>
+        <li>🌿 Essential Oils – 100% pure, natural, and therapeutic.</li>
+        <li>🎨 Custom Blends – Personalized fragrances to suit your style.</li>
+    </ul>
+    <p>We combine tradition, quality ingredients, and modern elegance to bring you a fragrance experience like no other.</p>
 </section>
 
 <section id="products">
-    <h2>Our Products</h2>
+    <h2>🛍️ Products & Services</h2>
     <div class="products">
         <div class="product">
-            <h3>Lavender Oil</h3>
-            <p>Pure and calming, perfect for relaxation.</p>
+            <h3>Luxury Perfumes</h3>
+            <p>Imported & locally crafted fragrances for all occasions.</p>
         </div>
         <div class="product">
-            <h3>Rose Perfume</h3>
-            <p>Elegant floral fragrance for every occasion.</p>
+            <h3>Essential Oils</h3>
+            <p>Lavender, Rose, Eucalyptus, Chocolate, and Strawberry.</p>
         </div>
         <div class="product">
-            <h3>Custom Blend</h3>
-            <p>Your signature scent, made just for you.</p>
+            <h3>Custom Scent Creation</h3>
+            <p>Unique blends for individuals & businesses.</p>
+        </div>
+        <div class="product">
+            <h3>Gift Packaging</h3>
+            <p>Elegant wrapping for special occasions.</p>
         </div>
     </div>
 </section>
 
 <section id="contact">
-    <h2>Contact Us</h2>
-    <p>📞 +256 123 456 789</p>
-    <p>📧 info@yourbusiness.com</p>
+    <h2>📞 Contact Us</h2>
+    <p><strong>Phone/WhatsApp:</strong> +256 756140196</p>
+    <p><strong>Email:</strong> <a href="mailto:arindaacquilla@gmail.com">arindaacquilla@gmail.com</a></p>
+    <p><strong>Instagram:</strong> acquilla arinda</p>
+    <p><strong>Facebook:</strong> acquilla arinda</p>
 </section>
 
 <footer>
-    <p>&copy; 2025 Your Business Name. All rights reserved.</p>
+    <p>&copy; 2025 BELL Oils & Perfumes | Hosted on <a href="https://acquillah.github.io/MY-WEBSITE/" style="color:white;">GitHub Pages</a></p>
 </footer>
 
 </body>
