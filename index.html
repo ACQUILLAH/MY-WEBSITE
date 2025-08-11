@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body><script>
+  const backToTop = document.getElementById('backToTop');
+
+  window.onscroll = function() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      backToTop.style.display = "block";
+    } else {
+      backToTop.style.display = "none";
+    }
+  };
+
+  backToTop.onclick = function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+</script>
+
+
+  <!-- Header -->
+  <header>
+    <div class="logo">BizBrand</div>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h1>Welcome to BizBrand</h1>
+    <p>Your one-stop solution for digital success.</p>
+    <a href="#contact" class="btn">Get Started</a>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="service-box">
+      <div class="service">Web Design</div>
+      <div class="service">Marketing</div>
+      <div class="service">Branding</div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We are a creative agency helping brands grow with beautiful digital solutions.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: hello@biZbrand.com</p>
+    <p>Phone: +256756140196</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 BizBrand. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
