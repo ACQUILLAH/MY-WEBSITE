@@ -40,7 +40,7 @@ Gift Packaging – Elegant wrapping for special occasions.
 
 ## 🚀 Deployment
 This website is hosted via **GitHub Pages**.  
-Live Link:
+Live Link:https://acquillah.github.io/MY-WEBSITE/
 
 ## 📜 License
 This project is open-source under the GITLICENCE
